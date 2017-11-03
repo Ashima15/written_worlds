@@ -1,0 +1,66 @@
+<template name="Profile" style="font-size:16px">
+        <!-- {{>loginButtons class="login-button-profile"}} -->
+    <!-- <h1>I am working</h1>-->
+    
+    {{> SideNavLayout}}
+
+    <!-- {{#if Template.subscriptionsReady}}
+        {{#each profile}}
+            <h3>{{namep}}</h3>
+        {{/each}}
+    {{/if}} -->
+        {{#each profile}}
+        <div class="">
+                <div class="row">
+                    <div class="col-3 display-pic">
+                        <img src="{{displayPhoto}}" alt="" height="350px">
+                        <p class="profile-name">{{namep}}</p>
+                    </div>
+
+                    <div class="col-9" style="">
+                        <div class="quote-container">
+                            <p class="quote-text"> <br> <br> "{{quote}}"</p>
+                        </div>
+
+                        <div class="row" style=" height:200px; margin-left:1px;">
+
+                            <div class="col-6 featured-container">
+                                <h3 class="featured-heading">Featured Books</h3>
+                                <div class="row">
+                                    {{#each featuredBooks}}
+                                        <div class="col-sm-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="{{thumbnail}}" alt="Card image cap">
+                                                <div class="card-body">
+                                                <h4 class="card-title">{{namef}}</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-6 read-container">
+                                <h4 class="read-heading">Read books</h4> <br>
+                                <p class="read-title">Beginner</p>
+                                <p class="read-no" >{{totalBooksRead}} books read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="edit"> Edit </button>
+                    {{#if editProfile}}
+                        {{> quickForm collection="Profile" id="updateProfileForm" type = "update" doc=this class= "profile-form"}}
+                    {{/if}}
+                </div> 
+            </div>
+            {{else}}
+                <h1>Create your Profile</h1> 
+                {{> quickForm collection="Profile" id="insertProfileForm" type = "insert" class= "profile-form"}} 
+        {{/each}}  
+
+        {{> OwnPosts}}
+
+
+</template>

@@ -1,0 +1,10 @@
+<template name="BookDetail">
+    <h1>{{book.name}}</h1>
+    <h4>{{book.author}}</h4>
+    {{#each book.review}}
+        <p>{{user}}- {{comment}}</p>
+    {{/each}}
+    <button class="rate-books">Rate</button>
+    <input type="text" id="review" placeholder="add a review">
+    <button class="submit-review">Submit Review</button>
+</template>

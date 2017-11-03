@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+/* h1{
+    color:red;
+} */
+
+body{
+    overflow-x: hidden;
+    font-size: 2rem !important; 
+}
+
+.text-right #login-dropdown-list{
+    left: -173px;
+}
+
+h1{
+    font-size: 20px;
+    
+}

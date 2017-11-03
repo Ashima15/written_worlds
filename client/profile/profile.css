@@ -1,0 +1,61 @@
+/* .display-pic{
+    min-height: 20vw;
+} */
+
+.quote-container{
+    height:150px;
+    margin-left:0px;
+    background:linear-gradient(to right, #6FB98F,#004445);
+}
+
+.quote-text{
+    color:white; 
+    text-align:center; 
+    font-size:22px; 
+    font-family: 'Courgette', cursive;
+}
+
+.featured-container{
+    background-color:#336B87;
+}
+
+.featured-heading{
+    color:white;
+}
+
+.card-img-top{
+    height: 100px;
+}
+
+.read-container{
+    background-color:#90AFC5;
+}
+
+.read-heading{
+    color: white; 
+    font-size:18px; 
+    padding-top:10px;
+}
+
+.read-title{
+    text-align: center; 
+    color: white; 
+    font-size:60px; 
+    margin:0px
+}
+
+.read-no{
+    text-align: right; 
+    color: white; 
+    font-size:16px;
+}
+
+.profile-name{
+    height: 40px;
+    background-color: rgba(52,58,64,0.5);
+    color: white;
+    position: absolute;
+    top: 310px;
+    text-align: center;
+    width: 100%
+}

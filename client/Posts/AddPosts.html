@@ -1,0 +1,9 @@
+<template name="AddPosts">
+        {{#autoForm collection="Posts" id="insertPost" type="insert"}}
+        <fieldset>
+          <legend>Post</legend>
+          {{> afQuickField name='post'}}
+        </fieldset>
+        <button type="submit" class="btn btn-primary" id="">Confirm</button>
+      {{/autoForm}}
+</template>

@@ -1,0 +1,11 @@
+<template name="AllPosts">
+    {{#each posts}}
+        <h4>{{postCreator this._id}}-{{post}}</h4>
+        <button class="notLiked" id="likeButton">Like</button>
+        {{#each comment}}
+            <h4>{{name}}- {{comment}} <span class="fa fa-close">X</span></h4>
+        {{/each}}
+        <input type="text" placeholder="Enter your comment" id="addComment"> 
+        <button class="add-comment">Send</button>
+    {{/each}}
+</template>
